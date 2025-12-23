@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usuarios — Cristina</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">Cristina!</div>
+      <div style="color:var(--muted);font-size:0.95rem">Modista · Confecciones a medida</div>
+    </div>
+    <nav aria-label="Principal">
+      <a href="../index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="arreglos.html">Arreglos</a>
+      <a href="sobre.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="tools">
+      <a href="../index.html" class="btn">Volver</a>
+    </div>
+  </header>
+
+  <main class="users-page" style="max-width:900px;margin:1.5rem auto;padding:0 1rem">
+    <h1>Club Cristina</h1>
+    <p class="short-text muted">Sumate al Club Cristina para beneficios exclusivos, ofertas y tu historial de compras y arreglos.</p>
+
+    <div class="auth-wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem">
+      <div id="registerBox" class="panel auth-panel">
+        <h2 id="reg-title">Registro</h2>
+        <p class="muted">Crea tu cuenta en un minuto. (Demo: Info se guarda localmente)</p>
+        <form id="registerForm" class="auth-form">
+          <label for="nameReg">Nombre</label>
+          <input id="nameReg" required placeholder="Tu nombre" />
+          <label for="emailReg" style="margin-top:0.6rem">Email</label>
+          <input id="emailReg" type="email" required placeholder="tu@correo.com" />
+          <label for="passReg" style="margin-top:0.6rem">Contraseña</label>
+          <input id="passReg" type="password" required placeholder="Contraseña" />
+          <label for="phoneReg" style="margin-top:0.6rem">Teléfono (opcional)</label>
+          <input id="phoneReg" placeholder="Ej: 11 1234 5678" />
+          <div style="margin-top:0.6rem;display:flex;gap:0.5rem;justify-content:flex-end">
+            <button type="submit" class="btn gold">Registrarse</button>
+          </div>
+          <div id="regMsg" class="muted" style="margin-top:0.6rem;font-size:0.95rem"></div>
+          <div style="margin-top:0.6rem;font-size:0.95rem" class="muted">¿Ya tenés cuenta? <a href="#" id="showLoginLink" class="auth-toggle-link">Iniciar sesión</a></div>
+        </form>
+      </div>
+
+      <div id="loginBox" class="panel auth-panel" style="display:none;">
+        <h2 id="login-title">Iniciar sesión</h2>
+        <p class="muted">Si ya sos parte del Club, ingresá tus datos.</p>
+        <form id="loginForm" class="auth-form">
+          <label for="emailLogin">Email</label>
+          <input id="emailLogin" type="email" required placeholder="tu@correo.com" />
+          <label for="passLogin" style="margin-top:0.6rem">Contraseña</label>
+          <input id="passLogin" type="password" required placeholder="Contraseña" />
+          <div style="margin-top:0.6rem;display:flex;gap:0.5rem;justify-content:flex-end">
+            <button type="submit" class="btn">Iniciar sesión</button>
+          </div>
+          <div id="loginMsg" class="muted" style="margin-top:0.6rem;font-size:0.95rem"></div>
+          <div style="margin-top:0.6rem;font-size:0.95rem" class="muted">¿No tenés cuenta? <a href="#" id="showRegisterLink" class="auth-toggle-link">Registrate</a></div>
+        </form>
+      </div>
+    </div>
+
+    <section id="profilePanel" class="panel" aria-hidden="true" style="display:none;margin-top:1.2rem">
+      <h2>Mi perfil</h2>
+      <div class="profile-grid" style="display:grid;grid-template-columns:140px 1fr;gap:1rem;align-items:start">
+        <div class="avatar" id="userAvatar" aria-hidden="false"></div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:start">
+            <div>
+              <div id="profileName" style="font-weight:800;font-size:1.05rem"></div>
+              <div id="profileEmail" class="muted" style="margin-top:0.25rem"></div>
+              <div id="profilePhone" class="muted" style="margin-top:0.25rem"></div>
+            </div>
+            <div style="text-align:right">
+              <button id="editProfileBtn" class="btn">Editar perfil</button>
+              <button id="logoutBtn" class="btn" style="margin-left:0.5rem">Cerrar sesión</button>
+            </div>
+          </div>
+
+          <div id="editForm" style="display:none;margin-top:0.8rem">
+            <label for="editName">Nombre</label>
+            <input id="editName" />
+            <label for="editPhone" style="margin-top:0.6rem">Teléfono</label>
+            <input id="editPhone" />
+            <div style="margin-top:0.6rem;display:flex;gap:0.5rem;justify-content:flex-end">
+              <button id="saveProfile" class="btn gold">Guardar</button>
+              <button id="cancelEdit" class="btn">Cancelar</button>
+            </div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <h3 style="margin:0">Beneficios</h3>
+            <div id="benefits" class="benefits" style="margin-top:0.6rem"></div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <h3 style="margin:0">Historial</h3>
+            <div id="history" style="margin-top:0.6rem"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="margin-top:2rem;text-align:center;color:var(--muted);padding:2rem 1rem">
+    <div>© Cristina Confecciones · Bernal</div>
+    <div style="margin-top:6px">Sitio demo — datos guardados en tu navegador</div>
+  </footer>
+
+  <script src="../js/scripts.js" defer></script>
+</body>
+</html>

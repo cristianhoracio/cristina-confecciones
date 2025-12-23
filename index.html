@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristina – Modista y confecciones a medida</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">Cristina!</div>
+      <div style="color:var(--muted);font-size:0.95rem">Modista · Confecciones a medida</div>
+    </div>
+    <nav aria-label="Principal">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="pages/tienda.html">Tienda</a>
+      <a href="pages/arreglos.html">Arreglos</a>
+      <a href="pages/sobre.html">Sobre nosotros</a>
+      <a href="pages/contacto.html">Contacto</a>
+    </nav>
+    <div class="tools">
+      <a href="pages/users.html" class="btn gold" style="margin-left:0.4rem">Sumate al Club Cristina</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <h1>Cristina – Modista - Confecciones a medida</h1>
+    <p class="short-text muted">Diseños atemporales y ajustes profesionales para que te sientas segura. Hecho a medida en Bernal con materiales cuidadosamente seleccionados.</p>
+
+    <section id="tienda" aria-labelledby="tienda-title" style="margin-top:1.5rem">
+      <h2 id="tienda-title">Tienda</h2>
+      <p style="color:var(--muted)">Selección cuidada de prendas y accesorios. Agrega al carrito y revisa tu pedido antes de pagar.</p>
+      <aside class="star-banner" aria-hidden="false">
+        <a href="pages/tienda.html#estrella" class="star-link">
+          <strong>⭐ Estrella del día</strong>
+          <div class="muted" style="margin-top:4px">Porque la estrella siempre sos vos — Ver en la tienda</div>
+        </a>
+      </aside>
+      <div class="grid" id="products">
+        <!-- Product 1 -->
+        <article class="product" data-id="p1" data-price="4200" data-images="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1503342452485-86f7b7a8b7d9?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=800&q=80">
+          <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" alt="Vestido beige" data-fallback="images/placeholder-vestido.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Vestido 'Amapola'</h3>
+          <div class="price">$4.200</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+        <!-- Product 2 -->
+        <article class="product" data-id="p2" data-price="3200" data-images="https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1495121605193-b116b5b09a74?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80">
+          <img src="https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=800&q=80" alt="Blusa rosa" data-fallback="images/placeholder-blusa.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Blusa 'Rosa Vintage'</h3>
+          <div class="price">$3.200</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+        <!-- Product 3 -->
+        <article class="product" data-id="p3" data-price="2600" data-images="https://images.unsplash.com/photo-1495121605193-b116b5b09a74?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80">
+          <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a74?auto=format&fit=crop&w=800&q=80" alt="Falda midi" data-fallback="images/placeholder-falda.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Falda 'Clásica'</h3>
+          <div class="price">$2.600</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+        <!-- Product 4 -->
+        <article class="product" data-id="p4" data-price="1800" data-images="https://images.unsplash.com/photo-1542000553535-c7e3c6f9d5b2?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80">
+          <img src="https://images.unsplash.com/photo-1542000553535-c7e3c6f9d5b2?auto=format&fit=crop&w=800&q=80" alt="Accesorio dorado" data-fallback="images/placeholder-accesorio.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Accesorio 'Dorado'</h3>
+          <div class="price">$1.800</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+
+        <!-- New items -->
+        <!-- Jeans -->
+        <article class="product" data-id="p5" data-price="4500" data-images="https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80">
+          <img src="https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=800&q=80" alt="Jeans dama" data-fallback="images/placeholder-vestido.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Jeans 'Mom'</h3>
+          <div class="price">$4.500</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+
+        <!-- Remera -->
+        <article class="product" data-id="p6" data-price="1600" data-images="https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1503342452485-86f7b7a8b7d9?auto=format&fit=crop&w=800&q=80, https://images.unsplash.com/photo-1495121605193-b116b5b09a74?auto=format&fit=crop&w=800&q=80">
+          <img src="https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=800&q=80" alt="Remera" data-fallback="images/placeholder-blusa.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Remera 'Básica'</h3>
+          <div class="price">$1.600</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+
+        <!-- Bolso -->
+        <article class="product" data-id="p7" data-price="3200" data-images="https://images.unsplash.com/photo-1542000553535-c7e3c6f9d5b2?auto=format&fit=crop&w=800&q=80, ../images/placeholder-bolso-bandolera.svg, ../images/placeholder-bolso-mini.svg">
+          <img src="https://images.unsplash.com/photo-1542000553535-c7e3c6f9d5b2?auto=format&fit=crop&w=800&q=80" alt="Bolso" data-fallback="images/placeholder-accesorio.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Bolso 'Tote'</h3>
+          <div class="price">$3.200</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+
+        <!-- Riñonera -->
+        <article class="product" data-id="p8" data-price="1500" data-images="https://images.unsplash.com/photo-1542000553535-c7e3c6f9d5b2?auto=format&fit=crop&w=800&q=80, ../images/placeholder-riñonera.svg, ../images/placeholder-accesorio.svg">
+          <img src="https://images.unsplash.com/photo-1542000553535-c7e3c6f9d5b2?auto=format&fit=crop&w=800&q=80" alt="Riñonera" data-fallback="images/placeholder-accesorio.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <h3>Riñonera 'Urbana'</h3>
+          <div class="price">$1.500</div>
+          <div style="margin-top:0.6rem"><button class="btn add-cart">Agregar al carrito</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="arreglos" style="margin-top:2rem">
+      <h2>Arreglos — Antes y Después</h2>
+      <p style="color:var(--muted)">Transformaciones reales hechas en nuestro taller.</p>
+      <div class="before-after">
+        <div class="pair">
+          <img src="https://images.unsplash.com/photo-1520975916209-2b1ae2d1c88d?auto=format&fit=crop&w=600&q=60" alt="Antes: vestido con ajuste" data-fallback="images/placeholder-vestido.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=60" alt="Después: vestido arreglado" data-fallback="images/placeholder-vestido.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+        </div>
+        <div class="pair">
+          <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=60" alt="Antes: pantalón descosido" data-fallback="images/placeholder-falda.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+          <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=60" alt="Después: pantalón reparado" data-fallback="images/placeholder-falda.svg" onerror="this.onerror=null; this.src=this.dataset.fallback;" />
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" style="margin-top:2rem">
+      <h2>Sobre nosotros</h2>
+      <p class="short-text muted">Cristina es un taller boutique en Bernal especializado en confecciones a medida y arreglos con atención al detalle y tiempos personalizados.</p>
+    </section>
+
+    <section id="contacto" style="margin-top:3rem">
+      <h2>Contacto</h2>
+      <div class="contact-grid" style="margin-top:0.5rem">
+        <form id="contactForm" action="/contact" method="POST">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" required placeholder="Tu nombre" />
+          <label for="email" style="margin-top:0.6rem">Email</label>
+          <input id="email" name="email" type="email" required placeholder="tu@correo.com" />
+          <label for="message" style="margin-top:0.6rem">Mensaje</label>
+          <textarea id="message" name="message" required placeholder="¿En qué podemos ayudarte?"></textarea>
+          <div style="margin-top:0.6rem;display:flex;gap:0.5rem;justify-content:flex-end">
+            <button type="submit" class="btn gold">Enviar</button>
+          </div>
+        </form>
+
+        <div style="background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)">
+          <h3>Visítanos en Bernal</h3>
+          <iframe src="https://www.google.com/maps?q=Bernal%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina&output=embed" width="100%" height="260" style="border:0;border-radius:8px;margin-top:0.5rem" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p style="color:var(--muted);font-size:0.95rem;margin-top:0.5rem">Dirección aproximada: Bernal, Provincia de Buenos Aires.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a class="whatsapp" href="https://wa.me/54911XXXXXXX?text=Hola%20Cristina!%20Quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <!-- whatsapp icon -->
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.07C21 6.5 16.52 2 11 2S1 6.5 1 12.07c0 2.12.69 4.08 1.86 5.7L1 22l4.5-1.18A9.87 9.87 0 0011 22c5.52 0 10-4.5 10-9.93z" fill="#fff" opacity="0.08"/><path d="M16.7 14.3c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.19.3-.74.97-.9 1.17-.16.19-.32.22-.62.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.33.44-.5.15-.16.2-.27.3-.45.1-.18.05-.33-.02-.47-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.19 0-.5.07-.76.33-.27.27-1.04 1.02-1.04 2.48s1.06 2.86 1.21 3.06c.15.2 2.08 3.25 5.04 4.55 2.95 1.31 3.19 1.03 3.77.97.58-.07 1.88-.77 2.15-1.52.27-.76.27-1.41.19-1.55-.07-.13-.24-.19-.5-.34z" fill="#fff"/></svg>
+    <span style="font-size:0.95rem">WhatsApp</span>
+  </a>
+
+  <footer>
+    <div>© Cristina Confecciones · Bernal</div>
+    <div style="margin-top:6px;color:var(--muted)">Síguenos en redes para ver más diseños</div>
+  </footer>
+
+  <!-- Quick view modal -->
+  <div id="quickView" class="quick-view" aria-hidden="true">
+    <div class="quick-view-backdrop" data-close>
+      <div class="quick-view-panel" role="dialog" aria-modal="true" aria-labelledby="qvTitle">
+        <button class="qv-close" aria-label="Cerrar" data-close>&times;</button>
+        <div class="qv-grid">
+          <div class="qv-image">
+            <div class="qv-gallery">
+              <div class="qv-nav">
+                <button id="qvPrev" class="qv-nav-btn" aria-label="Anterior">‹</button>
+                <button id="qvNext" class="qv-nav-btn" aria-label="Siguiente">›</button>
+              </div>
+              <img src="images/placeholder-vestido.svg" alt="" />
+            </div>
+            <div class="qv-thumbs" role="list"></div>
+          </div>
+          <div class="qv-meta">
+            <h3 id="qvTitle">Título del producto</h3>
+            <div id="qvPrice" class="price">$0</div>
+            <p id="qvDesc" class="muted">Descripción breve del producto.</p>
+            <div style="margin-top:1rem"><button id="qvAdd" class="btn add-cart">Agregar al carrito</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
